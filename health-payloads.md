@@ -767,137 +767,26 @@ Important final response rules:
 {
   "data": {
     "productCode": "health",
-    "referenceId": "AHW3RVJ9M9U",
-    "status": "success",
-    "error": null,
-    "pendingKeyList": [
-      "SELF$niva-health"
-    ],
-    "premiumRequest": {
-      "_id": "AHW3RVJ9M9U",
-      "uniqueId": "bucket-self-1",
-      "vertical": "HEALTH",
-      "policyType": "FLOATER",
-      "customerName": "asd",
-      "userMobile": "7400400747",
-      "userEmail": "shahabid37@gmail.com",
-      "pospUserName": "66bb2378ae016500016e5a06",
-      "healthPricingRequest": {
-        "pricingRequestId": "AHW3RVJ9M9U",
-        "businessType": "NEW",
-        "coverAmount": 1000000,
-        "deductible": 0,
-        "policyTerm": 1,
-        "selectedBucketName": "SELF",
-        "insuredMembers": [
-          {
-            "age": 53,
-            "age_months": 636,
-            "gender": "M",
-            "pincode": "411041",
-            "type": "self",
-            "usertype": "SELF"
-          }
-        ],
-        "buckets": [
-          {
-            "bucketName": "SELF",
-            "uniqueId": "bucket-self-1",
-            "sumInsured": 1000000,
-            "deductible": 0,
-            "selectedPlanTypeList": [
-              "BASIC"
-            ],
-            "selectedPlanType": "BASIC",
-            "noOfAdults": 1,
-            "noOfChildren": 0,
-            "pincode": "411041",
-            "city": "PUNE",
-            "state": "MH"
-          }
-        ]
-      }
-    },
-    "validationMap": {
-      "SELF$care-health": {
-        "key": "SELF$care-health",
-        "insurerCode": "CARE",
-        "uniqueId": "bucket-self-1",
-        "productName": "Care Supreme",
-        "valid": true,
-        "message": "success",
-        "planId": "care-supreme",
-        "productCode": "care-health",
-        "applicableProductVariants": [
-          "care-supreme"
-        ]
-      },
-      "SELF$niva-health": {
-        "key": "SELF$niva-health",
-        "insurerCode": "NIVA",
-        "uniqueId": "bucket-self-1",
-        "productName": "Niva ReAssure",
-        "valid": true,
-        "message": "success",
-        "planId": "niva-reassure",
-        "productCode": "niva-health",
-        "applicableProductVariants": [
-          "niva-reassure"
-        ]
-      }
-    },
-    "healthAddOnValidationInfo": {
-      "addonGroups": []
-    },
+    "referenceId": "AHW41N05KP9",
+    "pendingKeyList": [],
     "quotes": [
       {
         "_id": "RID-H-1",
-        "referenceId": "AHW3RVJ9M9U",
-        "provider": "CARE",
-        "productCode": "health",
-        "planCode": "SELF$care-health",
         "quoteId": "QID-H-1",
-        "partnerId": "partner-id",
-        "tenant": "tm",
-        "broker": "tm",
         "status": "success",
-        "leadName": "asd",
-        "insurerName": "Care Health",
-        "insurerCode": "CARE",
-        "premium": 12456,
-        "tax": 1900,
-        "totalPremium": 12456,
-        "netPremium": 10556,
-        "currency": "INR",
-        "sumInsured": 1000000,
-        "policyTerm": 1,
-        "riskInsured": {
-          "bucketName": "SELF",
-          "insuredMembers": [
-            {
-              "type": "self",
-              "usertype": "SELF",
-              "gender": "M",
-              "age": 53
-            }
-          ]
-        },
-        "planName": "Care Supreme",
-        "stage": "QUOTE",
+        "planCode": "all_members$care-health",
         "premiumResponse": {
-          "requestId": "AHW3RVJ9M9U",
-          "uniqueId": "bucket-self-1",
-          "bucketName": "SELF",
+          "requestId": "AHW41N05KP9",
+          "uniqueId": "dfafb1ef-82cf-4d4e-bc0c-1804143ff0f0",
+          "bucketName": "all_members",
           "insurerCode": "CARE",
           "planName": "Care Supreme",
-          "productName": "Care Supreme",
           "premiumStatus": "SUCCESS",
-          "message": "Success",
           "requestedCoverAmount": 1000000,
           "requestedDeductible": 0,
           "pincode": "411041",
-          "city": "PUNE",
-          "state": "MH",
+          "city": "Pune",
+          "state": "Maharashtra",
           "claimOfSpeedInOneMonth": 96.4,
           "tags": [
             "cashless",
@@ -913,9 +802,9 @@ Important final response rules:
               "planName": "Care Supreme",
               "planType": "BASIC",
               "planCode": "care-supreme",
-              "planKey": "SELF.care-supreme.1",
+              "planKey": "all_members.care-supreme.1",
               "policyTerm": 1,
-              "coverType": "FLOATER",
+              "coverType": "FAMILY_FLOATER",
               "businessType": "NEW",
               "totalPremium": 12456,
               "basicPremium": 10556,
@@ -933,21 +822,161 @@ Important final response rules:
               },
               "premiumStatus": "SUCCESS",
               "message": "Success",
-              "errorCategory": "SUCCESS",
+              "addOns": {}
+            },
+            {
+              "quoteId": "insurer-quote-2",
+              "insurerCode": "CARE",
+              "insurerName": "Care Health",
+              "sumInsured": 1000000,
+              "planId": "care-supreme-plus",
+              "planName": "Care Supreme Plus",
+              "planType": "ENHANCED",
+              "planCode": "care-supreme-plus",
+              "planKey": "all_members.care-supreme-plus.1",
+              "policyTerm": 1,
+              "coverType": "FAMILY_FLOATER",
+              "businessType": "NEW",
+              "totalPremium": 14890,
+              "basicPremium": 12619,
+              "serviceTax": 2271,
+              "discount": 0,
+              "grossPremium": 14890,
+              "recommended": false,
+              "resultSummary": [
+                "Higher room category",
+                "Restoration benefit"
+              ],
+              "healthBenefitFilters": {
+                "cashless": true,
+                "maternity": true
+              },
+              "premiumStatus": "SUCCESS",
+              "message": "Success",
+              "addOns": {}
+            }
+          ]
+        }
+      },
+      {
+        "_id": "RID-H-2",
+        "quoteId": "QID-H-2",
+        "status": "success",
+        "planCode": "all_members$niva-health",
+        "premiumResponse": {
+          "requestId": "AHW41N05KP9",
+          "uniqueId": "dfafb1ef-82cf-4d4e-bc0c-1804143ff0f0",
+          "bucketName": "all_members",
+          "insurerCode": "NIVA",
+          "planName": "Niva ReAssure",
+          "premiumStatus": "SUCCESS",
+          "requestedCoverAmount": 1000000,
+          "requestedDeductible": 0,
+          "pincode": "411041",
+          "city": "Pune",
+          "state": "Maharashtra",
+          "claimOfSpeedInOneMonth": 95.8,
+          "tags": [
+            "cashless"
+          ],
+          "pricingPlans": [
+            {
+              "quoteId": "insurer-quote-3",
+              "insurerCode": "NIVA",
+              "insurerName": "Niva Bupa Health",
+              "sumInsured": 1000000,
+              "planId": "niva-reassure",
+              "planName": "Niva ReAssure",
+              "planType": "BASIC",
+              "planCode": "niva-reassure",
+              "planKey": "all_members.niva-reassure.1",
+              "policyTerm": 1,
+              "coverType": "FAMILY_FLOATER",
+              "businessType": "NEW",
+              "totalPremium": 13240,
+              "basicPremium": 11220,
+              "serviceTax": 2020,
+              "discount": 0,
+              "grossPremium": 13240,
+              "recommended": true,
+              "resultSummary": [
+                "Booster benefit",
+                "Large cashless network"
+              ],
+              "healthBenefitFilters": {
+                "cashless": true,
+                "maternity": false
+              },
+              "premiumStatus": "SUCCESS",
+              "message": "Success",
+              "addOns": {}
+            }
+          ]
+        }
+      },
+      {
+        "_id": "RID-H-3",
+        "quoteId": "QID-H-3",
+        "status": "success",
+        "planCode": "parents$care-health",
+        "premiumResponse": {
+          "requestId": "AHW41N05KP9",
+          "uniqueId": "dfafb1ef-82cf-4d4e-bc0c-1804143ff0f0",
+          "bucketName": "parents",
+          "insurerCode": "CARE",
+          "planName": "Care Senior",
+          "premiumStatus": "SUCCESS",
+          "requestedCoverAmount": 1000000,
+          "requestedDeductible": 0,
+          "pincode": "411041",
+          "city": "Pune",
+          "state": "Maharashtra",
+          "claimOfSpeedInOneMonth": 96.4,
+          "tags": [
+            "senior-citizen"
+          ],
+          "pricingPlans": [
+            {
+              "quoteId": "insurer-quote-4",
+              "insurerCode": "CARE",
+              "insurerName": "Care Health",
+              "sumInsured": 1000000,
+              "planId": "care-senior",
+              "planName": "Care Senior",
+              "planType": "BASIC",
+              "planCode": "care-senior",
+              "planKey": "parents.care-senior.1",
+              "policyTerm": 1,
+              "coverType": "FAMILY_FLOATER",
+              "businessType": "NEW",
+              "totalPremium": 18450,
+              "basicPremium": 15636,
+              "serviceTax": 2814,
+              "discount": 0,
+              "grossPremium": 18450,
+              "recommended": true,
+              "resultSummary": [
+                "Designed for parents",
+                "Day care procedures covered"
+              ],
+              "healthBenefitFilters": {
+                "cashless": true,
+                "maternity": false
+              },
+              "premiumStatus": "SUCCESS",
+              "message": "Success",
               "addOns": {}
             }
           ]
         }
       }
-    ],
-    "transactionSource": "API",
-    "transactionMode": "ONLINE"
+    ]
   },
   "meta": {
     "status": "SUCCESS",
     "error": false,
     "traceId": "6997cc25a2396d59a5b88585cb8fe4d3",
-    "timestamp": "2026-03-26T12:00:00.000000000"
+    "timestamp": "2026-03-26T18:45:00.000000000"
   }
 }
 ```
