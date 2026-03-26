@@ -38,15 +38,6 @@ APIs:
             "type": "self",
             "usertype": "SELF",
             "pincode": "411041",
-            "ped": {
-              "hypertension": false,
-              "diabetes": false,
-              "heartDiseases": false,
-              "otherCondition": false
-            },
-            "medical": {},
-            "height": "170",
-            "weight": "72"
           }
         ]
       },
@@ -103,11 +94,6 @@ APIs:
             ]
           }
         ]
-      },
-      "utmParams": {
-        "utmMedium": null,
-        "utmSource": null,
-        "utmUrl": "https://pro.sanity.turtle-feature.com/health-insurance/health-profile/AHW3RVJ9M9U?step=leadInfo"
       },
       "vertical": "HEALTH"
     }
@@ -214,9 +200,6 @@ APIs:
   }
 }
 ```
-
-## 1.3 New request New business, MULTI_INDIVIDUAL multi-member with buckets
-
 ```json
 {
   "data": {
@@ -491,7 +474,7 @@ APIs:
 
 ---
 
-## 1.4 New request New business, family floater multi-member with buckets
+## 1.3 New request New business, family floater multi-member with buckets
 ```json
 {
   "data": {
