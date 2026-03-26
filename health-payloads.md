@@ -115,7 +115,7 @@ APIs:
 }
 ```
 
-## 1.2 New business, family floater multi-member bucket
+## 1.2 Initial request New business, family floater multi-member without buckets
 
 ```json
 {
@@ -123,163 +123,75 @@ APIs:
     "premiumRequest": {
       "pospUserName": "66bb2378ae016500016e5a06",
       "personalDetails": {
-        "customerName": "ABID AHMAD SHAH",
+        "customerName": "asdasd",
+        "customerConsentId": "",
         "userMobile": "7400400747",
-        "userEmail": "SHAHABID37@GMAIL.COM",
-        "customerId": "8080515100"
+        "userEmail": "shahabid37@gmail.com"
       },
       "proposerDetails": {},
       "riskInsured": {
         "insuredMembers": [
           {
-            "insuredFullName": "ABID AHMAD SHAH",
-            "dateOfBirth": "1988-05-03T00:00:00+05:30",
-            "entryAge": 37,
-            "ageInMonths": 444,
+            "insuredFullName": "asdasd",
+            "entryAge": 24,
+            "ageInMonths": 288,
             "gender": "M",
             "type": "self",
             "usertype": "SELF",
-            "pincode": "411041"
+            "pincode": "411041",
+            "hospitalIds": []
           },
           {
-            "insuredFullName": "SANA SHAH",
-            "dateOfBirth": "1990-08-12T00:00:00+05:30",
-            "entryAge": 35,
-            "ageInMonths": 420,
+            "insuredFullName": "asdasd spouse",
+            "entryAge": 24,
+            "ageInMonths": 288,
             "gender": "F",
             "type": "spouse",
             "usertype": "SPOUSE",
-            "pincode": "411041"
+            "pincode": "411041",
+            "hospitalIds": []
           },
           {
-            "insuredFullName": "CHILD ONE",
-            "dateOfBirth": "2018-02-01T00:00:00+05:30",
-            "entryAge": 7,
-            "ageInMonths": 84,
+            "insuredFullName": "asdasd mother",
+            "entryAge": 41,
+            "ageInMonths": 492,
+            "gender": "F",
+            "type": "mother",
+            "usertype": "MOTHER",
+            "pincode": "411041",
+            "hospitalIds": []
+          },
+          {
+            "insuredFullName": "asdasd father",
+            "entryAge": 41,
+            "ageInMonths": 492,
+            "gender": "M",
+            "type": "father",
+            "usertype": "FATHER",
+            "pincode": "411041",
+            "hospitalIds": []
+          },
+          {
+            "insuredFullName": "asdasd son",
+            "entryAge": 0,
+            "ageInMonths": 11,
             "gender": "M",
             "type": "son",
-            "usertype": "SON",
-            "pincode": "411041"
+            "usertype": "SON1",
+            "pincode": "411041",
+            "hospitalIds": []
           }
         ]
       },
       "planDetails": {
-        "policyType": "FLOATER",
+        "policyType": "MULTI_INDIVIDUAL",
         "businessType": "NEW",
-        "coverAmount": 1500000,
-        "deductible": 0,
-        "policyTerm": 1,
-        "noOfAdults": 2,
+        "coverAmount": 1000000,
+        "firstName": "asdasd",
+        "noOfAdults": 4,
         "noOfChildren": 1,
         "pincode": [
-          "411041"
-        ],
-        "preExistingDisease": false,
-        "requireMaternity": true,
-        "partnerTracksLead": true,
-        "saveCompleteRequest": true,
-        "isPaid": "No",
-        "selectedBucketName": "SELF_SPOUSE_SON",
-        "needs": {
-          "majorHealthExpenses": true
-        },
-        "addOnGroup": [],
-        "addOns": {},
-        "previousPolicyDetail": null
-      },
-      "bucketDetails": {
-        "buckets": [
-          {
-            "bucketName": "SELF_SPOUSE_SON",
-            "uniqueId": "bucket-family-1",
-            "sumInsured": 1500000,
-            "deductible": 0,
-            "selectedPlanTypeList": [
-              "BASIC",
-              "MATERNITY"
-            ],
-            "selectedPlanType": "BASIC",
-            "noOfAdults": 2,
-            "noOfChildren": 1,
-            "pincode": "411041",
-            "city": "PUNE",
-            "state": "MH",
-            "userdetails": [
-              {
-                "type": "self",
-                "usertype": "SELF",
-                "age": 37,
-                "age_months": 444,
-                "gender": "M",
-                "dob": "1988-05-03T00:00:00+05:30",
-                "pincode": "411041"
-              },
-              {
-                "type": "spouse",
-                "usertype": "SPOUSE",
-                "age": 35,
-                "age_months": 420,
-                "gender": "F",
-                "dob": "1990-08-12T00:00:00+05:30",
-                "pincode": "411041"
-              },
-              {
-                "type": "son",
-                "usertype": "SON",
-                "age": 7,
-                "age_months": 84,
-                "gender": "M",
-                "dob": "2018-02-01T00:00:00+05:30",
-                "pincode": "411041"
-              }
-            ]
-          }
-        ]
-      },
-      "vertical": "HEALTH"
-    }
-  }
-}
-```
-
-## 1.3 Portability with previous policy details
-
-```json
-{
-  "data": {
-    "referenceId": "AHW3RVJ9M9U",
-    "premiumRequest": {
-      "pospUserName": "66bb2378ae016500016e5a06",
-      "personalDetails": {
-        "customerName": "ABID AHMAD SHAH",
-        "userMobile": "7400400747",
-        "userEmail": "SHAHABID37@GMAIL.COM",
-        "customerId": "8080515100"
-      },
-      "proposerDetails": {},
-      "riskInsured": {
-        "insuredMembers": [
-          {
-            "insuredFullName": "ABID AHMAD SHAH",
-            "dateOfBirth": "1972-05-03T00:00:00+05:30",
-            "entryAge": 53,
-            "ageInMonths": 636,
-            "gender": "M",
-            "type": "self",
-            "usertype": "SELF",
-            "pincode": "411041"
-          }
-        ]
-      },
-      "planDetails": {
-        "policyType": "FLOATER",
-        "businessType": "PORTABILITY",
-        "coverAmount": 1000000,
-        "deductible": 0,
-        "policyTerm": 1,
-        "noOfAdults": 1,
-        "noOfChildren": 0,
-        "pincode": [
+          "411041",
           "411041"
         ],
         "preExistingDisease": false,
@@ -287,56 +199,565 @@ APIs:
         "partnerTracksLead": true,
         "saveCompleteRequest": true,
         "isPaid": "No",
-        "selectedBucketName": "SELF",
         "needs": {
           "majorHealthExpenses": true
         },
-        "addOnGroup": [],
-        "addOns": {},
-        "previousPolicyDetail": {
-          "insurerCode": "HDFCERGO",
-          "insurerName": "HDFC Ergo",
-          "productCode": "ergo-optima",
-          "productName": "Optima Restore",
-          "coverAmount": "1000000",
-          "premium": "18500",
-          "policyEndDate": "2026-05-31",
-          "claimed": false,
-          "insuredMembers": [
-            "SELF"
-          ]
+        "hospitalsIds": {
+          "411041": []
+        }
+      },
+      "initialReqFlag": true,
+      "isAsync": true,
+      "requestType": "INITIAL",
+      "vertical": "HEALTH"
+    }
+  }
+}
+```
+
+## 1.3 New request New business, MULTI_INDIVIDUAL multi-member with buckets
+
+```json
+{
+  "data": {
+    "referenceId": "AHW41N05KP9",
+    "premiumRequest": {
+      "pospUserName": "66bb2378ae016500016e5a06",
+      "personalDetails": {
+        "customerName": "asdasd",
+        "customerConsentId": "",
+        "userMobile": "7400400747",
+        "userEmail": "shahabid37@gmail.com"
+      },
+      "proposerDetails": {},
+      "riskInsured": {
+        "insuredMembers": [
+          {
+            "insuredFullName": "asdasd",
+            "entryAge": 24,
+            "ageInMonths": 288,
+            "gender": "M",
+            "type": "self",
+            "usertype": "SELF",
+            "pincode": "411041",
+            "hospitalIds": []
+          },
+          {
+            "insuredFullName": "asdasd spouse",
+            "entryAge": 24,
+            "ageInMonths": 288,
+            "gender": "F",
+            "type": "spouse",
+            "usertype": "SPOUSE",
+            "pincode": "411041",
+            "hospitalIds": []
+          },
+          {
+            "insuredFullName": "asdasd mother",
+            "entryAge": 41,
+            "ageInMonths": 492,
+            "gender": "F",
+            "type": "mother",
+            "usertype": "MOTHER",
+            "pincode": "411041",
+            "hospitalIds": []
+          },
+          {
+            "insuredFullName": "asdasd father",
+            "entryAge": 41,
+            "ageInMonths": 492,
+            "gender": "M",
+            "type": "father",
+            "usertype": "FATHER",
+            "pincode": "411041",
+            "hospitalIds": []
+          },
+          {
+            "insuredFullName": "asdasd son",
+            "entryAge": 0,
+            "ageInMonths": 11,
+            "gender": "M",
+            "type": "son",
+            "usertype": "SON1",
+            "pincode": "411041",
+            "hospitalIds": []
+          }
+        ]
+      },
+      "planDetails": {
+        "policyType": "MULTI_INDIVIDUAL",
+        "businessType": "NEW",
+        "coverAmount": 1000000,
+        "coverType": "MULTI_INDIVIDUAL",
+        "deductible": 0,
+        "firstName": "asdasd",
+        "maternityDateMonths": 0,
+        "noOfAdults": 4,
+        "noOfChildren": 1,
+        "pincode": [
+          "411041",
+          "411041"
+        ],
+        "preExistingDisease": false,
+        "requireMaternity": false,
+        "partnerTracksLead": true,
+        "saveCompleteRequest": true,
+        "isPaid": "No",
+        "selectedBucketName": "all_members",
+        "needs": {
+          "majorHealthExpenses": true,
+          "maternity": false,
+          "diseaseCover": false,
+          "seniorCitizen": false,
+          "upgradeCover": false,
+          "changeInsurer": false
+        },
+        "hospitalsIds": {
+          "411041": []
         }
       },
       "bucketDetails": {
         "buckets": [
           {
-            "bucketName": "SELF",
-            "uniqueId": "bucket-self-1",
+            "uniqueId": "dfafb1ef-82cf-4d4e-bc0c-1804143ff0f0",
+            "noOfAdults": 4,
+            "noOfChildren": 1,
             "sumInsured": 1000000,
             "deductible": 0,
             "selectedPlanTypeList": [
-              "BASIC"
+              "B"
             ],
-            "selectedPlanType": "BASIC",
-            "noOfAdults": 1,
-            "noOfChildren": 0,
-            "pincode": "411041",
-            "city": "PUNE",
-            "state": "MH",
             "userdetails": [
               {
+                "age": 24,
+                "age_months": 288,
                 "type": "self",
                 "usertype": "SELF",
-                "age": 53,
-                "age_months": 636,
-                "gender": "M",
-                "dob": "1972-05-03T00:00:00+05:30",
-                "pincode": "411041"
+                "gender": "M"
+              },
+              {
+                "age": 24,
+                "age_months": 288,
+                "type": "spouse",
+                "usertype": "SPOUSE",
+                "gender": "F"
+              },
+              {
+                "age": 41,
+                "age_months": 492,
+                "type": "mother",
+                "usertype": "MOTHER",
+                "gender": "F"
+              },
+              {
+                "age": 41,
+                "age_months": 492,
+                "type": "father",
+                "usertype": "FATHER",
+                "gender": "M"
+              },
+              {
+                "age": 0,
+                "age_months": 11,
+                "type": "son",
+                "usertype": "SON1",
+                "gender": "M"
               }
-            ]
+            ],
+            "year": 1,
+            "bucketName": "all_members",
+            "pincode": "411041",
+            "latitude": "18.4601666",
+            "longitude": "73.8114873",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "healthPricingRequestId": "AHW41N05KP9",
+            "hospitalIds": [],
+            "preExistDisease": false,
+            "coverType": "FAMILY_FLOATER",
+            "defaultSelectedBucket": true
+          },
+          {
+            "uniqueId": "dfafb1ef-82cf-4d4e-bc0c-1804143ff0f0",
+            "needs": {
+              "majorHealthExpenses": true,
+              "maternity": false,
+              "diseaseCover": false,
+              "seniorCitizen": false,
+              "upgradeCover": false,
+              "changeInsurer": false
+            },
+            "noOfAdults": 2,
+            "noOfChildren": 1,
+            "sumInsured": 1000000,
+            "deductible": 0,
+            "selectedPlanTypeList": [
+              "B"
+            ],
+            "selectedPlanType": "B",
+            "userdetails": [
+              {
+                "age": 24,
+                "age_months": 288,
+                "type": "self",
+                "usertype": "SELF",
+                "gender": "M"
+              },
+              {
+                "age": 24,
+                "age_months": 288,
+                "type": "spouse",
+                "usertype": "SPOUSE",
+                "gender": "F"
+              },
+              {
+                "age": 0,
+                "age_months": 11,
+                "type": "son",
+                "usertype": "SON1",
+                "gender": "M"
+              }
+            ],
+            "year": 1,
+            "bucketName": "self_spouse_1kids",
+            "pincode": "411041",
+            "latitude": "18.4601666",
+            "longitude": "73.8114873",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "healthPricingRequestId": "AHW41N05KP9",
+            "hospitalIds": [],
+            "preExistDisease": false,
+            "coverType": "FAMILY_FLOATER",
+            "defaultSelectedBucket": false
+          },
+          {
+            "uniqueId": "dfafb1ef-82cf-4d4e-bc0c-1804143ff0f0",
+            "needs": {
+              "majorHealthExpenses": true,
+              "maternity": false,
+              "diseaseCover": false,
+              "seniorCitizen": false,
+              "upgradeCover": false,
+              "changeInsurer": false
+            },
+            "noOfAdults": 2,
+            "noOfChildren": 0,
+            "sumInsured": 1000000,
+            "deductible": 0,
+            "selectedPlanTypeList": [
+              "B"
+            ],
+            "selectedPlanType": "B",
+            "userdetails": [
+              {
+                "age": 41,
+                "age_months": 492,
+                "type": "mother",
+                "usertype": "MOTHER",
+                "gender": "F"
+              },
+              {
+                "age": 41,
+                "age_months": 492,
+                "type": "father",
+                "usertype": "FATHER",
+                "gender": "M"
+              }
+            ],
+            "year": 1,
+            "bucketName": "parents",
+            "pincode": "411041",
+            "latitude": "18.4601666",
+            "longitude": "73.8114873",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "healthPricingRequestId": "AHW41N05KP9",
+            "hospitalIds": [],
+            "preExistDisease": false,
+            "coverType": "FAMILY_FLOATER",
+            "defaultSelectedBucket": false
           }
         ]
       },
+      "initialReqFlag": true,
+      "isAsync": true,
+      "requestType": "INITIAL",
+      "vertical": "HEALTH"
+    }
+  }
+}
+```
+
+---
+
+## 1.4 New request New business, family floater multi-member with buckets
+```json
+{
+  "data": {
+    "referenceId": "AHW41N05KP9",
+    "premiumRequest": {
+      "pospUserName": "66bb2378ae016500016e5a06",
+      "personalDetails": {
+        "customerName": "asdasd",
+        "customerConsentId": "",
+        "userMobile": "7400400747",
+        "userEmail": "shahabid37@gmail.com"
+      },
+      "proposerDetails": {},
+      "riskInsured": {
+        "insuredMembers": [
+          {
+            "insuredFullName": "asdasd",
+            "entryAge": 24,
+            "ageInMonths": 288,
+            "gender": "M",
+            "type": "self",
+            "usertype": "SELF",
+            "pincode": "411041",
+            "hospitalIds": []
+          },
+          {
+            "insuredFullName": "asdasd spouse",
+            "entryAge": 24,
+            "ageInMonths": 288,
+            "gender": "F",
+            "type": "spouse",
+            "usertype": "SPOUSE",
+            "pincode": "411041",
+            "hospitalIds": []
+          },
+          {
+            "insuredFullName": "asdasd mother",
+            "entryAge": 41,
+            "ageInMonths": 492,
+            "gender": "F",
+            "type": "mother",
+            "usertype": "MOTHER",
+            "pincode": "411041",
+            "hospitalIds": []
+          },
+          {
+            "insuredFullName": "asdasd father",
+            "entryAge": 41,
+            "ageInMonths": 492,
+            "gender": "M",
+            "type": "father",
+            "usertype": "FATHER",
+            "pincode": "411041",
+            "hospitalIds": []
+          },
+          {
+            "insuredFullName": "asdasd son",
+            "entryAge": 0,
+            "ageInMonths": 11,
+            "gender": "M",
+            "type": "son",
+            "usertype": "SON1",
+            "pincode": "411041",
+            "hospitalIds": []
+          }
+        ]
+      },
+      "planDetails": {
+        "policyType": "FAMILY_FLOATER",
+        "businessType": "NEW",
+        "coverAmount": 1000000,
+        "coverType": "FAMILY_FLOATER",
+        "deductible": 0,
+        "firstName": "asdasd",
+        "maternityDateMonths": 0,
+        "noOfAdults": 4,
+        "noOfChildren": 1,
+        "pincode": [
+          "411041",
+          "411041"
+        ],
+        "preExistingDisease": false,
+        "requireMaternity": false,
+        "partnerTracksLead": true,
+        "saveCompleteRequest": true,
+        "isPaid": "No",
+        "selectedBucketName": "all_members",
+        "needs": {
+          "majorHealthExpenses": true,
+          "maternity": false,
+          "diseaseCover": false,
+          "seniorCitizen": false,
+          "upgradeCover": false,
+          "changeInsurer": false
+        },
+        "hospitalsIds": {
+          "411041": []
+        }
+      },
+      "bucketDetails": {
+        "buckets": [
+          {
+            "uniqueId": "dfafb1ef-82cf-4d4e-bc0c-1804143ff0f0",
+            "noOfAdults": 4,
+            "noOfChildren": 1,
+            "sumInsured": 1000000,
+            "deductible": 0,
+            "selectedPlanTypeList": [
+              "B"
+            ],
+            "userdetails": [
+              {
+                "age": 24,
+                "age_months": 288,
+                "type": "self",
+                "usertype": "SELF",
+                "gender": "M"
+              },
+              {
+                "age": 24,
+                "age_months": 288,
+                "type": "spouse",
+                "usertype": "SPOUSE",
+                "gender": "F"
+              },
+              {
+                "age": 41,
+                "age_months": 492,
+                "type": "mother",
+                "usertype": "MOTHER",
+                "gender": "F"
+              },
+              {
+                "age": 41,
+                "age_months": 492,
+                "type": "father",
+                "usertype": "FATHER",
+                "gender": "M"
+              },
+              {
+                "age": 0,
+                "age_months": 11,
+                "type": "son",
+                "usertype": "SON1",
+                "gender": "M"
+              }
+            ],
+            "year": 1,
+            "bucketName": "all_members",
+            "pincode": "411041",
+            "latitude": "18.4601666",
+            "longitude": "73.8114873",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "healthPricingRequestId": "AHW41N05KP9",
+            "hospitalIds": [],
+            "preExistDisease": false,
+            "coverType": "FAMILY_FLOATER",
+            "defaultSelectedBucket": true
+          },
+          {
+            "uniqueId": "dfafb1ef-82cf-4d4e-bc0c-1804143ff0f0",
+            "needs": {
+              "majorHealthExpenses": true,
+              "maternity": false,
+              "diseaseCover": false,
+              "seniorCitizen": false,
+              "upgradeCover": false,
+              "changeInsurer": false
+            },
+            "noOfAdults": 2,
+            "noOfChildren": 1,
+            "sumInsured": 1000000,
+            "deductible": 0,
+            "selectedPlanTypeList": [
+              "B"
+            ],
+            "selectedPlanType": "B",
+            "userdetails": [
+              {
+                "age": 24,
+                "age_months": 288,
+                "type": "self",
+                "usertype": "SELF",
+                "gender": "M"
+              },
+              {
+                "age": 24,
+                "age_months": 288,
+                "type": "spouse",
+                "usertype": "SPOUSE",
+                "gender": "F"
+              },
+              {
+                "age": 0,
+                "age_months": 11,
+                "type": "son",
+                "usertype": "SON1",
+                "gender": "M"
+              }
+            ],
+            "year": 1,
+            "bucketName": "self_spouse_1kids",
+            "pincode": "411041",
+            "latitude": "18.4601666",
+            "longitude": "73.8114873",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "healthPricingRequestId": "AHW41N05KP9",
+            "hospitalIds": [],
+            "preExistDisease": false,
+            "coverType": "FAMILY_FLOATER",
+            "defaultSelectedBucket": false
+          },
+          {
+            "uniqueId": "dfafb1ef-82cf-4d4e-bc0c-1804143ff0f0",
+            "needs": {
+              "majorHealthExpenses": true,
+              "maternity": false,
+              "diseaseCover": false,
+              "seniorCitizen": false,
+              "upgradeCover": false,
+              "changeInsurer": false
+            },
+            "noOfAdults": 2,
+            "noOfChildren": 0,
+            "sumInsured": 1000000,
+            "deductible": 0,
+            "selectedPlanTypeList": [
+              "B"
+            ],
+            "selectedPlanType": "B",
+            "userdetails": [
+              {
+                "age": 41,
+                "age_months": 492,
+                "type": "mother",
+                "usertype": "MOTHER",
+                "gender": "F"
+              },
+              {
+                "age": 41,
+                "age_months": 492,
+                "type": "father",
+                "usertype": "FATHER",
+                "gender": "M"
+              }
+            ],
+            "year": 1,
+            "bucketName": "parents",
+            "pincode": "411041",
+            "latitude": "18.4601666",
+            "longitude": "73.8114873",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "healthPricingRequestId": "AHW41N05KP9",
+            "hospitalIds": [],
+            "preExistDisease": false,
+            "coverType": "FAMILY_FLOATER",
+            "defaultSelectedBucket": false
+          }
+        ]
+      },
+      "initialReqFlag": true,
+      "isAsync": true,
+      "requestType": "INITIAL",
       "vertical": "HEALTH"
     }
   }
