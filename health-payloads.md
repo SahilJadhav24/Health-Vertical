@@ -456,55 +456,29 @@ Wrapper:
         "status": "success",
         "planCode": "SELF$care-health",
         "premiumResponse": {
-          "requestId": "AHW-S-1",
-          "uniqueId": "bucket-self-1",
-          "bucketName": "SELF",
+          "status": "SUCCESS",
+          "insurerStatus": "SUCCESS",
           "insurerCode": "CARE",
-          "planName": "Care Supreme",
-          "premiumStatus": "SUCCESS",
-          "requestedCoverAmount": 1000000,
-          "requestedDeductible": 0,
-          "pincode": "411041",
-          "city": "PUNE",
-          "state": "MH",
-          "claimOfSpeedInOneMonth": 96.4,
-          "tags": [
-            "cashless",
-            "recommended"
-          ],
-          "pricingPlans": [
+          "productCode": "care-health",
+          "option": "Base",
+          "optionCode": 0,
+          "premium": 12456,
+          "tax": 1900,
+          "premiumWithTax": 12456,
+          "riderList": [],
+          "responseOptions": [
             {
-              "quoteId": "insurer-quote-1",
-              "insurerCode": "CARE",
-              "insurerName": "Care Health",
-              "sumInsured": 1000000,
-              "planId": "care-supreme",
-              "planName": "Care Supreme",
-              "planType": "BASIC",
-              "planCode": "care-supreme",
-              "planKey": "SELF.care-supreme.1",
-              "policyTerm": 1,
-              "coverType": "FLOATER",
-              "businessType": "NEW",
-              "totalPremium": 12456,
-              "basicPremium": 10556,
-              "serviceTax": 1900,
-              "discount": 0,
-              "grossPremium": 12456,
-              "recommended": true,
-              "resultSummary": [
-                "Cashless network",
-                "Room rent covered"
-              ],
-              "healthBenefitFilters": {
-                "cashless": true,
-                "maternity": false
-              },
-              "premiumStatus": "SUCCESS",
-              "message": "Success",
-              "addOns": {}
+              "option": "Plus",
+              "optionCode": 1,
+              "status": "SUCCESS",
+              "premiumWithTax": 14890
             }
-          ]
+          ],
+          "companyDetails": {
+            "insurerCode": "CARE",
+            "displayName": "Care Health",
+            "logo": "https://..."
+          }
         }
       }
     ]
@@ -634,182 +608,194 @@ Important final response rules:
 ```json
 {
   "data": {
-    "productCode": "health",
-    "referenceId": "AHW3RVJ9M9U",
-    "status": "success",
-    "error": null,
+    "referenceId": "AHWHP1QQBR8",
     "pendingKeyList": [
       "SELF$niva-health"
     ],
-    "premiumRequest": {
-      "_id": "AHW3RVJ9M9U",
-      "uniqueId": "bucket-self-1",
-      "vertical": "HEALTH",
-      "policyType": "FLOATER",
-      "customerName": "asd",
-      "userMobile": "7400400747",
-      "userEmail": "shahabid37@gmail.com",
-      "pospUserName": "66bb2378ae016500016e5a06",
-      "healthPricingRequest": {
-        "pricingRequestId": "AHW3RVJ9M9U",
-        "businessType": "NEW",
-        "coverAmount": 1000000,
-        "deductible": 0,
-        "policyTerm": 1,
-        "selectedBucketName": "SELF",
-        "insuredMembers": [
-          {
-            "age": 53,
-            "age_months": 636,
-            "gender": "M",
-            "pincode": "411041",
-            "type": "self",
-            "usertype": "SELF"
-          }
-        ],
-        "buckets": [
-          {
-            "bucketName": "SELF",
-            "uniqueId": "bucket-self-1",
-            "sumInsured": 1000000,
-            "deductible": 0,
-            "selectedPlanTypeList": [
-              "BASIC"
-            ],
-            "selectedPlanType": "BASIC",
-            "noOfAdults": 1,
-            "noOfChildren": 0,
-            "pincode": "411041",
-            "city": "PUNE",
-            "state": "MH"
-          }
-        ]
-      }
-    },
-    "validationMap": {
-      "SELF$care-health": {
-        "key": "SELF$care-health",
-        "insurerCode": "CARE",
-        "uniqueId": "bucket-self-1",
-        "productName": "Care Supreme",
-        "valid": true,
-        "message": "success",
-        "planId": "care-supreme",
-        "productCode": "care-health",
-        "applicableProductVariants": [
-          "care-supreme"
-        ]
-      },
-      "SELF$niva-health": {
-        "key": "SELF$niva-health",
-        "insurerCode": "NIVA",
-        "uniqueId": "bucket-self-1",
-        "productName": "Niva ReAssure",
-        "valid": true,
-        "message": "success",
-        "planId": "niva-reassure",
-        "productCode": "niva-health",
-        "applicableProductVariants": [
-          "niva-reassure"
-        ]
-      }
-    },
-    "healthAddOnValidationInfo": {
-      "addonGroups": []
-    },
     "quotes": [
       {
-        "_id": "RID-H-1",
-        "referenceId": "AHW3RVJ9M9U",
-        "provider": "CARE",
-        "productCode": "health",
-        "planCode": "SELF$care-health",
-        "quoteId": "QID-H-1",
-        "partnerId": "partner-id",
-        "tenant": "tm",
-        "broker": "tm",
-        "status": "success",
-        "leadName": "asd",
-        "insurerName": "Care Health",
+        "quoteId": "dc28c8a00890741fca957b2f92783599",
+        "insurerQuoteId": "b8735fd6-0a0d-4e30-aa73-2ae1e0be8d96",
+        "policyType": "FLOATER",
         "insurerCode": "CARE",
-        "premium": 12456,
-        "tax": 1900,
-        "totalPremium": 12456,
-        "netPremium": 10556,
-        "currency": "INR",
-        "sumInsured": 1000000,
+        "internalProductCode": "care-health-care-supreme",
+        "productCode": "SELF$care-health",
+        "productName": "Care Supreme",
+        "option": "Base",
+        "optionCode": 1,
+        "productUIN": "UIN-CARE-SUPREME",
+        "tmPlanId": "2460",
         "policyTerm": 1,
-        "riskInsured": {
-          "bucketName": "SELF",
-          "insuredMembers": [
-            {
-              "type": "self",
-              "usertype": "SELF",
-              "gender": "M",
-              "age": 53
-            }
-          ]
-        },
-        "planName": "Care Supreme",
-        "stage": "QUOTE",
-        "premiumResponse": {
-          "requestId": "AHW3RVJ9M9U",
-          "uniqueId": "bucket-self-1",
-          "bucketName": "SELF",
-          "insurerCode": "CARE",
-          "planName": "Care Supreme",
-          "productName": "Care Supreme",
-          "premiumStatus": "SUCCESS",
-          "message": "Success",
-          "requestedCoverAmount": 1000000,
-          "requestedDeductible": 0,
-          "pincode": "411041",
-          "city": "PUNE",
-          "state": "MH",
-          "claimOfSpeedInOneMonth": 96.4,
-          "tags": [
-            "cashless",
-            "recommended"
-          ],
-          "pricingPlans": [
-            {
-              "quoteId": "insurer-quote-1",
-              "insurerCode": "CARE",
-              "insurerName": "Care Health",
+        "paymentFrequency": 1,
+        "premiumPaymentTerm": 1,
+        "score": 0,
+        "category": "health",
+        "premium": 12456,
+        "taxRate": 18,
+        "premiumWithTax": 12456,
+        "sumAssured": 1000000,
+        "deductible": 0,
+        "cashlessHospitalsCount": 11432,
+        "responseOptions": [
+          {
+            "quoteId": "6d5ffe95c64e53f849a48396c049ec80",
+            "insurerQuoteId": "fdee0910-ae04-4cfc-b64b-b7556ebb74e9",
+            "policyType": "FLOATER",
+            "insurerCode": "CARE",
+            "internalProductCode": "care-health-care-supreme",
+            "productCode": "SELF$care-health",
+            "productName": "Care Supreme Plus",
+            "option": "Plus",
+            "optionCode": 2,
+            "productUIN": "UIN-CARE-SUPREME",
+            "tmPlanId": "2460",
+            "policyTerm": 1,
+            "paymentFrequency": 1,
+            "premiumPaymentTerm": 1,
+            "score": 19,
+            "category": "health",
+            "premium": 14890,
+            "taxRate": 18,
+            "premiumWithTax": 14890,
+            "sumAssured": 1000000,
+            "deductible": 0,
+            "status": "SUCCESS",
+            "insurerStatus": "SUCCESS",
+            "insurerMessage": "SUCCESS",
+            "insurerBusinessFlowType": "QUOTES_REQUEST",
+            "maternityBenefits": [
+              "Enhanced maternity cover after waiting period"
+            ],
+            "planNote": [
+              "Higher room rent eligibility",
+              "Higher restore benefit"
+            ],
+            "planType": "Enhanced",
+            "riderList": [],
+            "showRider": false,
+            "showRiderPremium": false,
+            "cashlessHospitalsCount": 11432,
+            "age": 53,
+            "inputCoverAmount": 1000000,
+            "planFeatureDetailsList": [],
+            "bqpRedirectionEnabled": false,
+            "paymentFirstJourneyCheck": false,
+            "resultCardsInfo": {
+              "entryAge": 53,
               "sumInsured": 1000000,
-              "planId": "care-supreme",
-              "planName": "Care Supreme",
-              "planType": "BASIC",
-              "planCode": "care-supreme",
-              "planKey": "SELF.care-supreme.1",
-              "policyTerm": 1,
-              "coverType": "FLOATER",
-              "businessType": "NEW",
-              "totalPremium": 12456,
-              "basicPremium": 10556,
-              "serviceTax": 1900,
-              "discount": 0,
-              "grossPremium": 12456,
-              "recommended": true,
-              "resultSummary": [
-                "Cashless network",
-                "Room rent covered"
-              ],
-              "healthBenefitFilters": {
-                "cashless": true,
-                "maternity": false
-              },
-              "premiumStatus": "SUCCESS",
-              "message": "Success",
-              "errorCategory": "SUCCESS",
-              "addOns": {}
-            }
-          ]
-        }
+              "cashlessHospitalsCount": 11432,
+              "claimSettlementRatio": "96.40%",
+              "roomRent": "Single Private Room"
+            },
+            "planFeatureList": [
+              {
+                "code": "maternity",
+                "name": "Maternity",
+                "active": true
+              }
+            ],
+            "errorCategory": "SUCCESS",
+            "defaultOption": false,
+            "specialBenefits": [
+              "Air ambulance cover"
+            ]
+          },
+          {
+            "quoteId": "9f49a203f8207031a79797aff6f8c798",
+            "insurerQuoteId": "3218c981-3014-4e85-b15e-5366f721303b",
+            "policyType": "FLOATER",
+            "insurerCode": "CARE",
+            "internalProductCode": "care-health-care-supreme",
+            "productCode": "SELF$care-health",
+            "productName": "Care Supreme Elite",
+            "option": "Elite",
+            "optionCode": 3,
+            "productUIN": "UIN-CARE-SUPREME",
+            "tmPlanId": "2460",
+            "policyTerm": 1,
+            "paymentFrequency": 1,
+            "premiumPaymentTerm": 1,
+            "score": 34,
+            "category": "health",
+            "premium": 17325,
+            "taxRate": 18,
+            "premiumWithTax": 17325,
+            "sumAssured": 1000000,
+            "deductible": 0,
+            "status": "SUCCESS",
+            "insurerStatus": "SUCCESS",
+            "insurerMessage": "SUCCESS",
+            "insurerBusinessFlowType": "QUOTES_REQUEST",
+            "planType": "Elite",
+            "riderList": [],
+            "showRider": false,
+            "showRiderPremium": false,
+            "cashlessHospitalsCount": 11432,
+            "age": 53,
+            "inputCoverAmount": 1000000,
+            "planFeatureDetailsList": [],
+            "bqpRedirectionEnabled": false,
+            "paymentFirstJourneyCheck": false,
+            "errorCategory": "SUCCESS",
+            "defaultOption": false
+          }
+        ],
+        "status": "SUCCESS",
+        "insurerStatus": "SUCCESS",
+        "insurerMessage": "SUCCESS",
+        "insurerBusinessFlowType": "QUOTES_REQUEST",
+        "companyDetails": {
+          "InsurerId": "CARE",
+          "InsurerName": "Care Health",
+          "Logo": "CARE.jpg",
+          "CompanyDetails": "Care Health Insurance is a standalone health insurer offering retail and family floater plans.",
+          "ClaimSettlementRate": {
+            "OneMonth": "96.40",
+            "OneToThreeMonths": "2.10",
+            "ThreeMonthsPlus": "1.50"
+          },
+          "SpeedOfClaimSettlementSummary": "96.40",
+          "InsurerCode": "CARE",
+          "ContactDetails": {
+            "Telephone": "1800 102 4488",
+            "Address": "Care Health Insurance, Gurgaon, Haryana, India."
+          },
+          "HealthCompanyDetails": {
+            "claimSettlementRatio": "96.40%",
+            "cashlessHospitalsCount": "11432",
+            "inceptionYear": "2012",
+            "solvencyRatio": "1.90"
+          }
+        },
+        "maternityBenefits": [
+          "No-claim bonus multiplier",
+          "Annual health check-up"
+        ],
+        "planType": "Base",
+        "riderList": [],
+        "showRider": false,
+        "showRiderPremium": false,
+        "age": 53,
+        "inputCoverAmount": 1000000,
+        "planFeatureDetailsList": [],
+        "bqpRedirectionEnabled": false,
+        "paymentFirstJourneyCheck": false,
+        "resultCardsInfo": {
+          "entryAge": 53,
+          "sumInsured": 1000000,
+          "cashlessHospitalsCount": 11432,
+          "claimSettlementRatio": "96.40%",
+          "roomRent": "Single Private Room",
+          "restoreBenefit": true
+        },
+        "errorCategory": "SUCCESS",
+        "defaultOption": true,
+        "specialBenefits": [
+          "Unlimited e-consultation",
+          "Annual health check-up"
+        ]
       }
-    ],
-    "transactionSource": "API",
-    "transactionMode": "ONLINE"
+    ]
   },
   "meta": {
     "status": "SUCCESS",
