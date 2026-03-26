@@ -500,8 +500,6 @@ Wrapper:
 - `error`
 - `pendingKeyList`
 - `premiumRequest`
-- `validationMap`
-- `healthAddOnValidationInfo`
 - `quotes`
 - `transactionSource`
 - `transactionMode`
@@ -512,7 +510,7 @@ Wrapper:
 - `leadName`, `insurerName`, `insurerCode`
 - `premium`, `tax`, `totalPremium`, `netPremium`, `currency`, `sumInsured`, `policyTerm`
 - `riskInsured`, `planName`, `stage`
-- `validationMap`, `pendingKeyList`, `errorMessage`
+- `pendingKeyList`, `errorMessage`
 - `premiumResponse`
 
 `premiumResponse` contains:
@@ -754,8 +752,6 @@ Wrapper:
 
 Important final response rules:
 - `data.premiumRequest` is returned because health FE uses it to drive bucket-aware results and filters.
-- `data.validationMap` is returned because health FE uses it for quote orchestration and polling.
-- `data.healthAddOnValidationInfo` is returned when addon validation metadata exists.
 - `data.quotes` can contain `SUCCESS`, `PENDING`, and `ERROR` rows for bucket/product-key level visibility.
 - `pendingKeyList` tracks unfinished quote keys and is used by poll API.
 - `premiumResponse` is the normalized health quote payload for a quote row.
